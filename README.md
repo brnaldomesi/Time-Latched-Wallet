@@ -1,8 +1,6 @@
-# Time Locked Wallet - TopCoder/ConsenSys Hackathon
+# Time Latched Wallet
 
-Update: this projet won a prize in ConsenSys/Topcoder - uPort Blockchain and Identity Hackathon: https://www.topcoder.com/challenges/30060883?tab=details
-
-## Time Locked Wallets - Use Cases
+## Use Cases
 
 There are many different applications of the Ethereum smart contracts, 
 the most popular at the moment being cryptocurrencies aka ERC20 tokens and crowd funding token sales aka ICOs.
@@ -40,8 +38,6 @@ Here comes the demo outline:
 * Bob cannot withdraw any funds before the wallet time lock expires or is empty
 * Bob withdraws the ETH when the wallet gets unlocked
 * Bob withdraws all TopCoder tokens 
-
-The demo is recorded and uploaded here: https://youtu.be/q4sUnL3KhOU.
 
 ## Technical Details
 
@@ -86,5 +82,5 @@ Install the [uPort](https://www.uport.me/) app on your smartphone and give it a 
 
 I've discovered the following issues:
 
-* When sending Ether using payable methods on uPort wrapped contract object, invalid value is sent. I filed a bug report here: https://github.com/uport-project/uport-connect/issues/90
+* When sending Ether using payable methods on uPort wrapped contract object, invalid value is sent.
 * Rinkeby Etherscan is not reflecting correctly TimeLockedWallet contracts, probably because they were deployed from within the factory contract. Neither it is showing correctly all Ether transactions.
